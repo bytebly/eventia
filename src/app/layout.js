@@ -1,3 +1,4 @@
+
 import '@fontsource-variable/plus-jakarta-sans';
 import './globals.css';
 import Providers from '@/components/ui/Providers';
@@ -7,6 +8,7 @@ import ScrollProgress from '@/components/layout/ScrollProgress';
 import JsonLd from '@/components/seo/JsonLd';
 import { siteGraph } from '@/lib/schema';
 import { site } from '@/data/site';
+import WhatsAppButton from '@/components/ui/WhatsAppButton';
 
 export const viewport = {
   width: 'device-width',
@@ -48,13 +50,22 @@ export const metadata = {
     description: site.description,
     url: '/',
   },
-  twitter: { card: 'summary_large_image', title: defaultTitle, description: site.description },
+  twitter: {
+    card: 'summary_large_image',
+    title: defaultTitle,
+    description: site.description,
+  },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
-  // Full favicon set: ICO (legacy), SVG (modern browsers), PNG 16/32/192, Apple touch icon (iOS), Android via manifest.
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml', sizes: 'any' },
@@ -65,11 +76,20 @@ export const metadata = {
     apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
   manifest: '/manifest.webmanifest',
-  appleWebApp: { capable: true, title: site.shortName, statusBarStyle: 'default' },
-  formatDetection: { telephone: false, email: false, address: false },
-  verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
+  appleWebApp: {
+    capable: true,
+    title: site.shortName,
+    statusBarStyle: 'default',
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   other: {
-    // Geo / local-search hints
     'geo.region': 'IN-GJ',
     'geo.placename': 'Ahmedabad',
     'geo.country': 'IN',
@@ -80,25 +100,29 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang={site.locale}>
+    <html lang={site.locale} suppressHydrationWarning>
       <head>
-        {/* If JavaScript is unavailable, never leave animated content hidden. */}
         <noscript>
           <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important;clip-path:none!important}`}</style>
         </noscript>
         <JsonLd data={siteGraph()} />
       </head>
+
       <body>
         <a href="#main" className="skip-link">
           Skip to content
         </a>
+
         <Providers>
           <ScrollProgress />
           <Navbar />
+
           <main id="main" tabIndex={-1}>
             {children}
           </main>
+
           <Footer />
+          <WhatsAppButton />
         </Providers>
       </body>
     </html>
