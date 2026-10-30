@@ -1,0 +1,28 @@
+{
+  "name": "eventia-pharmaceuticals-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Eventia Pharmaceuticals website (Next.js, JavaScript)",
+  "engines": { "node": ">=20.9.0" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
+    "lucide-react": "^1.56.0",
+    "motion": "^14.1.0",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "^16.4.0",
+    "tailwindcss": "^4.3.3"
+  }
+}
