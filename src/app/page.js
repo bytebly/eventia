@@ -10,6 +10,7 @@ import QualityBand from '@/components/home/QualityBand';
 import LifeAtEventia from '@/components/home/LifeAtEventia';
 import CtaBand from '@/components/home/CtaBand';
 import { site } from '@/data/site';
+import EventsGallery from '@/components/home/EventsGallery';
 
 export const metadata = {
   title: { absolute: `${site.name} | Pharma Marketing, Ahmedabad & Mumbai` },
@@ -31,6 +32,7 @@ export default function HomePage() {
       <Moments />
       <QualityBand />
       <LifeAtEventia />
+      <EventsGallery />
       <CtaBand />
     </>
   );

@@ -9,6 +9,7 @@ import JsonLd from '@/components/seo/JsonLd';
 import { siteGraph } from '@/lib/schema';
 import { site } from '@/data/site';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
+import ScrollToTop from '@/components/layout/ScrollToTop';
 
 export const viewport = {
   width: 'device-width',
@@ -100,7 +101,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang={site.locale} suppressHydrationWarning>
+    <html lang={site.locale} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <noscript>
           <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important;clip-path:none!important}`}</style>
@@ -115,6 +116,7 @@ export default function RootLayout({ children }) {
 
         <Providers>
           <ScrollProgress />
+          <ScrollToTop />
           <Navbar />
 
           <main id="main" tabIndex={-1}>

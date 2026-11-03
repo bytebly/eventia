@@ -168,3 +168,17 @@ export const faqs = [
     a: 'Call +91 98981 81701, email eventiapharmaceutical2019@gmail.com, or use the contact form on the Contact page. Eventia welcomes enquiries from healthcare professionals, pharmaceutical manufacturers and business partners.',
   },
 ];
+
+export const eventPhotos = [
+  // Doctor's conference
+  { title: "Doctor's conference", image: '/images/events/conference/stall-welcome-delegates.webp', alt: 'Eventia Pharmaceuticals stall at a doctors conference with a Welcome Delegates banner', group: 'conference', ratio: '16/9', position: 'center' },
+  { title: "Doctor's conference", image: '/images/events/conference/stall-team.webp', alt: 'Eventia team standing at the conference stall with product displays', group: 'conference', ratio: '16/9', position: 'center' },
+  { title: "Doctor's conference", image: '/images/events/conference/stall-visitors.webp', alt: 'Eventia team members with visitors at the conference stall', group: 'conference', ratio: '16/9', position: 'center' },
+  { title: "Doctor's conference", image: '/images/events/conference/team-selfie.webp', alt: 'Eventia team taking a group selfie at the conference stall', group: 'conference', ratio: '16/9', position: 'center' },
+  { title: "Doctor's conference", image: '/images/events/conference/stall-guests.webp', alt: 'Guests visiting the Eventia stall at the conference', group: 'conference', ratio: '3/4', position: 'center 30%' },
+
+  // Delhi exhibition
+  { title: 'Exhibition at Delhi', image: '/images/events/delhi-exhibition/iphex-welcome.webp', alt: 'Eventia team members in front of the Welcome to IPHEX board at Bharat Mandapam, Delhi', group: 'delhi', ratio: '3/4', position: 'center' },
+  { title: 'Exhibition at Delhi', image: '/images/events/delhi-exhibition/participating-countries.webp', alt: 'Eventia team members beside the Participating Countries board at the Delhi exhibition', group: 'delhi', ratio: '3/4', position: 'center' },
+  { title: 'Exhibition at Delhi', image: '/images/events/delhi-exhibition/visitors.webp', alt: 'Eventia team members meeting visitors at the Delhi exhibition', group: 'delhi', ratio: '4/3', position: 'center' },
+];
