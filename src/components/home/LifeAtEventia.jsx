@@ -59,9 +59,9 @@ export default function LifeAtEventia() {
           ))}
         </Stagger>
         <Reveal className="mt-8 text-center sm:mt-12 [&_a]:w-full [&_a]:justify-center sm:[&_a]:w-auto">
-          <Button href="/team" variant="outline">
+          {/* <Button href="/team" variant="outline">
             Meet the Team
-          </Button>
+          </Button> */}
         </Reveal>
       </div>
     </section>

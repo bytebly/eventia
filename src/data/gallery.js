@@ -1,0 +1,48 @@
+export const albums = [
+  {
+    key: 'celebrations',
+    title: 'Celebrations',
+    text: 'Cake cuttings and happy moments shared by the Eventia family.',
+    photos: [
+      { src: '/images/gallery/celebrations/black-forest-cake.webp', width: 960, height: 1280, alt: 'Black Forest cake with the Eventia name and lit candles' },
+      { src: '/images/gallery/celebrations/synobone-cake.webp', width: 1280, height: 853, alt: 'Celebration cake decorated with the Synobone design' },
+      { src: '/images/gallery/celebrations/cake-cutting.webp', width: 1280, height: 853, alt: 'Eventia team members cutting the celebration cake together' },
+      { src: '/images/gallery/celebrations/team-beside-cake.webp', width: 1280, height: 853, alt: 'Three Eventia team members standing beside the celebration cake' },
+      { src: '/images/gallery/celebrations/team-cheering.webp', width: 1280, height: 853, alt: 'Eventia team members clapping at the cake cutting' },
+      { src: '/images/gallery/celebrations/sharing-cake.webp', width: 1280, height: 853, alt: 'A team member offering a colleague a piece of cake' },
+      { src: '/images/gallery/celebrations/cake-with-candles.webp', width: 1280, height: 853, alt: 'Celebration cake with lit candles and balloons' },
+      { src: '/images/gallery/celebrations/synobone-cake-2.webp', width: 1280, height: 853, alt: 'Synobone celebration cake on a table with balloons' },
+      { src: '/images/gallery/celebrations/candles-and-balloons.webp', width: 1280, height: 853, alt: 'A team member beside the cake with candles and yellow balloons' },
+      { src: '/images/gallery/celebrations/stage-group.webp', width: 1600, height: 1200, alt: 'Eventia team group photo on stage at the celebration' },
+    ],
+  },
+  {
+    key: 'team',
+    title: 'Team Moments',
+    text: 'The Eventia team together at events and gatherings.',
+    photos: [
+      { src: '/images/gallery/team/team-outdoors.webp', width: 720, height: 540, alt: 'Eventia team members standing together outdoors' },
+      { src: '/images/gallery/team/team-garden-group.webp', width: 1280, height: 853, alt: 'Eventia team group photo in a garden setting' },
+      { src: '/images/gallery/team/team-close-group.webp', width: 1280, height: 853, alt: 'Eventia team members posing together indoors' },
+      { src: '/images/gallery/team/team-indoor-group.webp', width: 1280, height: 853, alt: 'Eventia team standing in a group inside the venue' },
+      { src: '/images/gallery/team/venue-steps-group.webp', width: 1600, height: 721, alt: 'Eventia team gathered on the steps of the event venue' },
+    ],
+  },
+  {
+    key: 'event-stall',
+    title: 'At the Event Stall',
+    text: 'Eventia stall, product displays and conversations with visitors.',
+    photos: [
+      { src: '/images/gallery/event-stall/stall-team-1.webp', width: 1156, height: 651, alt: 'Eventia team at the Eventia stall with product banners' },
+      { src: '/images/gallery/event-stall/stall-wide.webp', width: 1156, height: 651, alt: 'Wide view of the Eventia stall at the event' },
+      { src: '/images/gallery/event-stall/stall-team-2.webp', width: 1156, height: 651, alt: 'Eventia team members and visitors at the stall' },
+      { src: '/images/gallery/event-stall/stall-team-3.webp', width: 1156, height: 651, alt: 'Eventia team members in front of the Eventia stall backdrop' },
+      { src: '/images/gallery/event-stall/stall-team-4.webp', width: 1156, height: 651, alt: 'Eventia team members smiling at the stall' },
+      { src: '/images/gallery/event-stall/stall-team-5.webp', width: 1156, height: 651, alt: 'Eventia team and guests at the stall' },
+      { src: '/images/gallery/event-stall/stall-team-6.webp', width: 1156, height: 651, alt: 'Eventia team members lined up at the stall' },
+      { src: '/images/gallery/event-stall/stall-visitors.webp', width: 1156, height: 651, alt: 'Visitors with Eventia team members at the stall' },
+      { src: '/images/gallery/event-stall/stall-portrait.webp', width: 651, height: 1156, alt: 'Eventia team standing in front of the stall' },
+      { src: '/images/gallery/event-stall/stall-representative.webp', width: 901, height: 1600, alt: 'An Eventia representative at the stall with product displays' },
+    ],
+  },
+];

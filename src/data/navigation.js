@@ -11,6 +11,7 @@ export const mainNav = [
   { label: 'Products', href: '/products' },
   { label: 'Quality', href: '/quality' },
   { label: 'Our Team', href: '/team' },
+   { label: 'Gallery', href: '/gallery' },
 ];
 
 export const ctaNav = { label: 'Contact Us', href: '/contact' };
@@ -19,6 +20,7 @@ export const footerColumns = {
   company: [
     { label: 'About Us', href: '/about' },
     { label: 'Our Team', href: '/team' },
+     { label: 'Gallery', href: '/gallery' },
     { label: 'Quality & Certifications', href: '/quality' },
     { label: 'Contact Us', href: '/contact' },
   ],

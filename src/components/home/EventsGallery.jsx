@@ -2,6 +2,7 @@ import Image from 'next/image';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
 import { eventPhotos } from '@/data/company';
+import Button from '@/components/ui/Button';
 
 const groups = [
   { key: 'conference', title: "Doctor's Conference", text: 'Meeting doctors and presenting our product range at the conference.' },
@@ -43,8 +44,14 @@ export default function EventsGallery() {
                   </li>
                 ))}
             </ul>
+
           </div>
         ))}
+        <div className="mt-12 text-center">
+          <Button href="/gallery" variant="primary">
+            View full gallery
+          </Button>
+        </div>
       </div>
     </section>
   );

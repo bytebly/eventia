@@ -97,6 +97,22 @@ export const owner = {
   alt: 'Jigar Suthar, owner of Eventia Pharmaceuticals, at a medical exhibition stall',
 };
 
+export const owners = [
+  owner,
+  {
+    name: 'Sandip', // TODO: add surname, e.g. 'Sandip Patel'
+    role: 'Owner',
+    image: img('people/sandip-owner'),
+    alt: 'Sandip, owner of Eventia Pharmaceuticals',
+  },
+  {
+    name: 'Kalpesh', // TODO: add surname, e.g. 'Kalpesh Shah'
+    role: 'Owner',
+    image: img('people/kalpesh-owner'),
+    alt: 'Kalpesh, owner of Eventia Pharmaceuticals',
+  },
+];
+
 export const teamPhotos = {
   group: {
     image: img('team/eventia-team-group'),
